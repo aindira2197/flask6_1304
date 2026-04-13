@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Ranglar</title>
+</head>
+<body>
+
+    <h2>Ranglar ro'yxati</h2>
+
+    <ul>
+        {% for rang in ranglar %}
+            <li>
+                {{ rang }} 
+                ({{ rang|length }} ta harf)
+                - <a href="/ranglar/{{ rang }}/info">Info</a>
+            </li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
